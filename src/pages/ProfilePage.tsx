@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 const ProfilePage: React.FC = () => {

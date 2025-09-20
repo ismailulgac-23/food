@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 const ProductPage: React.FC = () => {
-  const { productId } = useParams<{ productId: string }>();
   const [quantity, setQuantity] = useState(1);
   const [selectedOptions, setSelectedOptions] = useState<{ [key: string]: string }>({});
   const [isFavorite, setIsFavorite] = useState(false);

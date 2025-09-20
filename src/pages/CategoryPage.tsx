@@ -5,7 +5,6 @@ const CategoryPage: React.FC = () => {
   const { categoryName } = useParams<{ categoryName: string }>();
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [sortBy, setSortBy] = useState('popularity');
-  const [activeFilters, setActiveFilters] = useState<string[]>([]);
 
   const products = [
     {
